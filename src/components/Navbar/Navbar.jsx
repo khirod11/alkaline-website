@@ -19,17 +19,17 @@ const HeroSection = () => {
           <li>Contact Us</li>
         </ul>
         <button className="sign-in-btn">Sign In</button>
+
+        {/* Social Media Icons */}
+        <div className="social-icons">
+          <FaInstagram />
+          <FaFacebookF />
+          <FaTwitter />
+          <FaLinkedinIn />
+        </div>
       </nav>
     </div>
-    
-      {/* Social Media Icons */}
-      <div className="social-icons">
-        <FaInstagram />
-        <FaFacebookF />
-        <FaTwitter />
-        <FaLinkedinIn />
-      </div>
-      </>
+    </>
   );
 };
 

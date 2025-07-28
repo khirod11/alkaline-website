@@ -1,5 +1,5 @@
 import HeroSection from './components/HeroSection/HeroSection'
-import StorySection from './components/StorySection.jsx/StorySection'
+import StorySection from './components/StorySection/StorySection.jsx'
 import LuxuryHydration from './components/LuxuryHydration/LuxuryHydration.jsx'
 import OurProducts from './components/OurProducts/OurProducts.jsx'
 import AlkalineHydration from './components/AlkalineHydration/AlkalineHydration.jsx'

@@ -3,11 +3,11 @@ import './ContactSection.scss';
 
 const ContactSection = () => {
   return (
-    <section className="contact-section">
+    <div className="contact-section">
       <div className="contact-image" />
 
       <div className="contact-form-container">
-        <h2>Let’s Talk Hydration</h2>
+        <h2>Let's Talk Hydration</h2>
         <p>Reach Out To Us For Orders, Subscriptions, Or Support.</p>
         <form className="contact-form">
           <div className="form-row">
@@ -22,7 +22,7 @@ const ContactSection = () => {
           <button type="submit">Submit</button>
         </form>
       </div>
-    </section>
+    </div>
   );
 };
 

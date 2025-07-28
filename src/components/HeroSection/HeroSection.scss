@@ -1,0 +1,39 @@
+.hero-section-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+// Responsive Design
+// Desktop (≥ 1024px)
+@media (min-width: 1024px) {
+  .hero-section-container {
+    min-height: 100vh;
+  }
+}
+
+// Tablet (768px – 1023px)
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero-section-container {
+    min-height: 90vh;
+  }
+}
+
+// Mobile (≤ 767px)
+@media (max-width: 767px) {
+  .hero-section-container {
+    min-height: 80vh;
+  }
+}
+
+// Extra small mobile devices
+@media (max-width: 480px) {
+  .hero-section-container {
+    min-height: 70vh;
+  }
+}

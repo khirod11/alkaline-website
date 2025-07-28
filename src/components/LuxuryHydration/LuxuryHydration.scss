@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   padding: 2rem;
+  // border: 1px solid black;
 
   .hydration-container {
     display: grid;
@@ -90,6 +91,235 @@
       @media (max-width: 768px) {
         .feature:nth-child(2n) {
           border-right: none;
+        }
+      }
+    }
+  }
+}
+
+// Responsive Design
+// Desktop (≥ 1024px)
+@media (min-width: 1024px) {
+  .hydration-section {
+    padding: 3rem 2rem;
+
+    .hydration-container {
+      grid-template-columns: 0.7fr 3fr;
+      gap: 3rem;
+      padding: 2rem;
+
+      .hydration-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          max-width: 250px;
+          height: auto;
+        }
+      }
+
+      .hydration-right {
+        h2 {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+          margin-bottom: 2.5rem;
+        }
+
+        .hydration-features {
+          grid-template-columns: repeat(4, 1fr);
+          gap: 1.5rem;
+
+          .feature {
+            img {
+              width: 52px;
+              height: 52px;
+            }
+
+            p {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Tablet (768px – 1023px)
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hydration-section {
+    padding: 2rem 0rem;
+
+    .hydration-container {
+      grid-template-columns: 0.6fr 2.5fr;
+      gap: 2rem;
+      padding: 1.5rem;
+
+      .hydration-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          max-width: 200px;
+          height: auto;
+        }
+      }
+
+      .hydration-right {
+        h2 {
+          font-size: 1.6rem;
+          margin-bottom: 0.8rem;
+        }
+
+        p {
+          font-size: 1rem;
+          margin-bottom: 2rem;
+        }
+
+        .hydration-features {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1.2rem;
+
+          .feature {
+            img {
+              width: 45px;
+              height: 45px;
+            }
+
+            p {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mobile (≤ 767px)
+@media (max-width: 767px) {
+  .hydration-section {
+    padding: 1.5rem 1rem;
+
+    .hydration-container {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      padding: 1.5rem;
+      text-align: center;
+
+      .hydration-left {
+        order: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          max-width: 150px;
+          height: auto;
+        }
+      }
+
+      .hydration-right {
+        order: 1;
+
+        h2 {
+          font-size: 1.4rem;
+          margin-bottom: 0.8rem;
+          text-align: center;
+        }
+
+        p {
+          font-size: 0.9rem;
+          margin-bottom: 1.5rem;
+          text-align: center;
+        }
+
+        .hydration-features {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1rem;
+          padding: 0.5rem 0;
+
+          .feature {
+            border-right: none;
+            border-bottom: 1px solid #ddd;
+            padding: 1rem 0.5rem;
+
+            img {
+              width: 40px;
+              height: 40px;
+              margin-bottom: 0.5rem;
+            }
+
+            p {
+              font-size: 0.8rem;
+              margin: 0;
+            }
+          }
+
+          .feature:nth-child(2n) {
+            border-right: none;
+          }
+
+          .feature:nth-last-child(-n+2) {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Extra small mobile devices
+@media (max-width: 480px) {
+  .hydration-section {
+    padding: 1rem 0.5rem;
+
+    .hydration-container {
+      padding: 1rem;
+      gap: 1rem;
+
+      .hydration-left {
+        img {
+          max-width: 120px;
+        }
+      }
+
+      .hydration-right {
+        h2 {
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: 0.8rem;
+        }
+
+        .hydration-features {
+          grid-template-columns: 1fr;
+          gap: 0.8rem;
+
+          .feature {
+            border-bottom: 1px solid #ddd;
+            padding: 0.8rem 0;
+
+            img {
+              width: 35px;
+              height: 35px;
+            }
+
+            p {
+              font-size: 0.75rem;
+            }
+          }
+
+          .feature:last-child {
+            border-bottom: none;
+          }
         }
       }
     }
