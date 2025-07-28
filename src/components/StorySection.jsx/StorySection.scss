@@ -1,0 +1,51 @@
+.story-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 6rem;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  // border: 1px solid black;
+
+  .story-left {
+    flex: 1;
+    min-width: 300px;
+    max-width: 40%;
+
+    h2 {
+      color: #36614b;
+      font-size: 28px;
+      font-weight: 700;
+    //   margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #333;
+    //   margin-bottom: 2rem;
+    }
+
+    .learn-more {
+      font-size: 14px;
+      font-weight: 500;
+      color: #00b395;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .story-right {
+    flex: 1.5;
+    min-width: 300px;
+    max-width: 45%;
+    color: #333;
+
+    p {
+    font-size: 14.2px;
+    line-height: 1.2;
+    }
+  }
+}

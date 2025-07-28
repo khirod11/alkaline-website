@@ -1,0 +1,81 @@
+.footer {
+  background: url('../../assets/bottle5.png') no-repeat center center/cover;
+  padding: 3rem 2rem;
+  color: #fff;
+
+//   .footer-overlay {
+//     background-color: rgba(0, 0, 0, 0.3); 
+//     padding: 2rem;
+//   }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+
+    .footer-section {
+      h4 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+        border-bottom: 2px solid #fff;
+        display: inline-block;
+        padding-bottom: 0.3rem;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin: 0.4rem 0;
+          font-size: 0.95rem;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+      }
+
+      &.social {
+        .footer-socials {
+    display: flex;
+    gap: 1rem;
+    margin-top: 10rem;
+
+    svg {
+      font-size: 1rem;
+      cursor: pointer;
+      background-color: #fff;
+      color: #000;
+      border: 1px solid #fff;
+      padding: 0.5rem;
+      transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+
+      &:hover {
+        transform: scale(1.2);
+        background-color: #000;
+        color: #fff;
+        border-color: #000;
+      }
+    }
+  }
+      }
+      &.site-map {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); // divide into two columns
+      gap: 1rem;
+
+      ul {
+        padding: 0;
+
+        li {
+          margin: 0.4rem 0;
+          font-size: 0.95rem;
+        }
+      }
+    }
+    }
+  }
+}
+

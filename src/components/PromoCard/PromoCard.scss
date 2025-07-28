@@ -1,0 +1,93 @@
+.promo-card {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
+  margin: -220px auto 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+//   border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  // Background overlay to control opacity
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.01); // <- Adjust opacity here
+    z-index: 0;
+  }
+
+  .bottle-group,
+  .text-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .bottle-group {
+  display: flex;
+    width: 60px;
+    height: 280px;
+    // border: 1px solid white;
+  }
+}
+
+.text-content {
+//   max-width: 400px;
+  width:550px;
+//   border:1px solid white;
+
+  h1 {
+    font-size: 49.5px;
+    margin: 0;
+    color: #FFFFFF;
+  }
+
+  .highlight {
+    font-weight: 700;
+    background: white;
+    color:#6B9080;
+    padding: 0 8px;
+    display: inline-block;
+    font-size: 46.8px;
+  }
+
+  p {
+    margin-top: 10px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .buttons {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+
+    .order-btn {
+      background-color:#4BC7A4;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 20px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .explore-btn {
+      background: white;
+      border: 2px solid #6B9080;
+      color: #6B9080;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}
